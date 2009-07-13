@@ -1,14 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 3.2.0.1
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: Jul 10, 2009 at 05:36 PM
--- Server version: 5.0.51
--- PHP Version: 5.2.8
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-
 --
 -- Database: `pokemon`
 --
@@ -20,13 +9,13 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 
 CREATE TABLE IF NOT EXISTS `abilities` (
-  `id` int(11) NOT NULL auto_increment,
+  `id` int(11) NOT NULL,
   `number` int(11) default NULL,
   `aname` tinytext,
   `description1` mediumtext,
   `description2` mediumtext,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=124 ;
+);
 
 --
 -- Dumping data for table `abilities`
