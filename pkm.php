@@ -19,12 +19,9 @@
 	
 */
 
-	$dbconn = mysql_connect("127.0.0.1", "username", "password");
-	mysql_select_db("database_name");
-
-	include("Pokemon.php"); // Include class definition
+	require_once("common.php"); // Include common functionality
 	
-	$pokemon = new Pokemon();
+	$pokemon = new PKM();
 	if(isset($_FILES["pkmfile"]["tmp_name"])) {
 		$filename = $_FILES["pkmfile"]["tmp_name"];
 	}
@@ -104,7 +101,7 @@ thead td {
 		
 		<!-- INTERNAL TABLE -->
 		
-		<a href="http://www.thepokemart.com/">&lt;&lt; Go Back and Upload Another</a>
+		<a href="index.php">&lt;&lt; Go Back and Upload Another</a>
 
 	<table>
 		<tr>
@@ -263,7 +260,7 @@ thead td {
 		</tr>
 </table>
 
-		<a href="http://www.thepokemart.com/">&lt;&lt; Go Back and Upload Another</a>
+		<a href="index.php">&lt;&lt; Go Back and Upload Another</a>
 
 	</div>
 

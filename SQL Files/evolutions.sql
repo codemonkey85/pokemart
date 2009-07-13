@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2009 at 05:36 PM
+-- Generation Time: Jul 12, 2009 at 08:29 PM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.8
 
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `evolutions` (
   `to` int(11) default NULL,
   `detail` mediumtext,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=207 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=253 ;
 
 --
 -- Dumping data for table `evolutions`
@@ -237,4 +237,50 @@ INSERT INTO `evolutions` (`id`, `from`, `to`, `detail`) VALUES
 (203, 401, 402, 'Level 30'),
 (204, 402, 403, 'Level 50'),
 (205, 404, 405, 'Level 20'),
-(206, 405, 406, 'Level 45');
+(206, 405, 406, 'Level 45'),
+(207, 420, 421, 'Level 18'),
+(208, 421, 422, 'Level 32'),
+(209, 423, 424, 'Level 14'),
+(210, 424, 425, 'Level 36'),
+(211, 426, 427, 'Level 16'),
+(212, 427, 428, 'Level 36'),
+(213, 429, 430, 'Level 14'),
+(214, 430, 431, 'Level 34'),
+(215, 432, 433, 'Level 15'),
+(216, 434, 435, 'Level 10'),
+(217, 436, 437, 'Level 15'),
+(218, 437, 438, 'Level 30'),
+(219, 439, 342, 'Happiness During The Day'),
+(220, 441, 442, 'Level 30'),
+(221, 443, 444, 'Level 30'),
+(222, 445, 448, 'Level 20 (Only When Female)'),
+(223, 446, 449, 'Level 20 (Only When Female)'),
+(224, 447, 450, 'Level 20 (Only When Female)'),
+(225, 445, 451, 'Level 20 (Only When Male)'),
+(226, 446, 451, 'Level 20 (Only When Male)'),
+(227, 447, 451, 'Level 20 (Only When Male)'),
+(228, 452, 453, 'Level 21 (Only When Female)'),
+(229, 455, 456, 'Level 26'),
+(230, 457, 458, 'Level 25'),
+(231, 457, 459, 'Level 25'),
+(232, 460, 462, 'Level 30'),
+(233, 461, 463, 'Level 30'),
+(234, 465, 466, 'Level 28'),
+(235, 467, 468, 'Happiness'),
+(236, 471, 472, 'Level 38'),
+(237, 473, 388, 'Happiness During The Night'),
+(238, 474, 475, 'Level 34'),
+(239, 476, 477, 'Level 33'),
+(240, 478, 185, 'Level Up While Knowing Mimic'),
+(241, 479, 122, 'Level Up While Knowing Mimic'),
+(242, 480, 113, 'Level Up While Holding Oval Stone During Daytime'),
+(243, 483, 484, 'Level 24'),
+(244, 484, 485, 'Level 48'),
+(245, 486, 143, 'Happiness'),
+(246, 487, 488, 'Happiness During The Day'),
+(247, 489, 490, 'Level 34'),
+(248, 491, 492, 'Level 40'),
+(249, 493, 494, 'Level 37'),
+(250, 496, 497, 'Level 31'),
+(251, 498, 253, 'Level Up With Remoraid In The Party'),
+(252, 499, 500, 'Level 40');
